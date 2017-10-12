@@ -14,14 +14,14 @@ This projects include extracting degree information from TSV file downloaded fro
 * Output: .fig, overlap percentage as a function of fraction of top users ordered by out/in-degree. 
 
 ## Datasets:
-### Facebook wall posts
+### Facebook wall posts http://konect.uni-koblenz.de/networks/facebook-wosn-wall
 The is the directed network of a small subset of posts to other user's wall on Facebook. The nodes of the network are Facebook users, and each directed edge represents one post, linking the users writing a post to the users whose wall the post is written on. Since users may write multiple posts on a wall, the network allows multiple edges connecting a single node pair. Since users may write on their own wall, the network contains loops.
 * Size:	46,952 vertices (users)
 * Volume:	876,993 edges
 * Average degree (overall):	37.357 edges / vertex
 * Reciprocity:	62.5%
 
-### Youtube links
+### Youtube links http://konect.uni-koblenz.de/networks/youtube-links
 This is the social network of Youtube users and their connections.
 * Size: 1,138,499 vertices (users)
 * Volume: 4,942,297 edges (links)
@@ -29,39 +29,33 @@ This is the social network of Youtube users and their connections.
 * Reciprocity: 79.0%
 
 
-### Wikipedia talk, English
+### Wikipedia talk, English http://konect.uni-koblenz.de/networks/wiki_talk_en
 This is the communication network of the English Wikipedia. Nodes represent users of the English Wikipedia, and an edge from user A to user B denotes that user A wrote a message on the talk page of user B at a certain timestamp.
 * Size: 2,987,535 vertices (users)
 * Volume: 24,981,163 edges (messages)
 * Average degree (overall):	16.724 edges / vertex
 * Reciprocity:	21.5%
 
-### Flickr Friendship
+### Flickr Friendship http://konect.uni-koblenz.de/networks/flickr-growth
 This is the social network of Flickr users and their friendship connections.
 * Size: 2,302,925 vertices (users)
 * Volume: 33,140,017 edges (friendships)
 * Average degree (overall): 28.781 edges / vertex
 * Reciprocity:	62.2%
 
-### LiveJournal Frendship
+### LiveJournal Frendship http://konect.uni-koblenz.de/networks/soc-LiveJournal1
 This is the social network of LiveJournal. Nodes are users of LiveJournal, and directed edges represent friendships.
 * Size:	4,847,571 vertices (users)
 * Volume:	68,475,391 edges (friendships)
 * Average degree (overall):	28.251 edges / vertex
 * Reciprocity:	74.8%
 
-### Google Hyperlink
+### Google Hyperlink http://konect.uni-koblenz.de/networks/web-Google
 This is a network of web pages connected by hyperlinks. The data was released in 2002 by Google as a part of the Google Programming Contest.
 * Size: 875,713 vertices (webpages)
 * Volume: 	5,105,039 edges (hyperlinks)
 * Average degree (overall):	11.659 edges / vertex
 * Reciprocity	30.7%
-
-### Twitter (WWW)
-This is the follower network from Twitter, containing 1.4 billion directed follow edges between 41 million Twitter users. http://konect.uni-koblenz.de/networks/twitter
-* Size: 41,652,230 vertices (users)
-* Volume:	1,468,365,182 edges (followings)
-* Average degree (overall)	70.506 edges / vertex
 
 ## How to run:
 1. Select the dataset you are interested in, download the TSV file from the KONECT website.
