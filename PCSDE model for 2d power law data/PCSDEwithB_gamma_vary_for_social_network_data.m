@@ -1,6 +1,6 @@
+%Generate sample data from PCSDE model with the same distribution as social network datasets
 
 %Livejournal: lambda_0=1; mu=0.87; sgm=0.8, gamma=0.8, (SyntheticData)
-
 
 %Flickr: lambda=1; mu=0.96, sgm=0.8; gamma=0.5 (SyntheticData)
          
