@@ -1,5 +1,6 @@
-%X1: indegree; X2: outdegree
+%% Generate sample data from PCSDE model with the same distribution as Bollobas model 
 
+%X1: indegree; X2: outdegree
 
 Delta=0.005;
 
@@ -28,8 +29,7 @@ x2=zeros(1,N);
 
 
 for i=1:N
-    i
-    
+    display(i);
         
     t_life=exprnd(1/lambda);
         
@@ -86,7 +86,8 @@ x1_int=ceil(x1);
 x2_int=ceil(x2);     
 
 
-figure;
+s=subplot(1,1,1);
 plot(x1_int,x2_int,'+black');
-%set(s,'XScale','log'); 
+set(s,'XScale','log'); 
+set(s,'YScale','log');
     
