@@ -13,6 +13,14 @@ This projects include extracting degree information from TSV file downloaded fro
 * Usage: get the nodes overlap percentage between top x% nodes ranked by outdegree and indegree in descending order. This figure reflects the asymptotic dependency between in-degree and out-degree of nodes with the increasing of nodes' degree;
 * Output: .fig, overlap percentage as a function of fraction of top users ordered by out/in-degree. 
 
+4. Inside PCSDE model for 2d power law data:
+|  function       |    description               |  output                    |
+  |-----------------|------------------------| ---------------------------|
+  | GenerativeModel2D_Bollobas.m   |  Generate networks from Bollobas model |  A: adjacency matrix; D: D(i, 1) indegree of node i; D(i,2): outdegree of node i |
+  | PCSDEwithB_gamma_05_for_Bollobas.m   |  Generate sample data from PCSDE model with the same distribution as Bollobas model  |  Figure  |
+  | PCSDEwithB_gamma_vary_for_social_network_data.m  | Generate sample data from PCSDE model with the same distribution as social network datasets | Figure |
+
+
 ## Datasets:
 ### Facebook wall posts http://konect.uni-koblenz.de/networks/facebook-wosn-wall
 The is the directed network of a small subset of posts to other user's wall on Facebook. The nodes of the network are Facebook users, and each directed edge represents one post, linking the users writing a post to the users whose wall the post is written on. Since users may write multiple posts on a wall, the network allows multiple edges connecting a single node pair. Since users may write on their own wall, the network contains loops.
