@@ -14,9 +14,10 @@ This projects include extracting degree information from TSV file downloaded fro
 * Output: .fig, overlap percentage as a function of fraction of top users ordered by out/in-degree. 
 
 4. Inside PCSDE model for 2d power law data:
+
 |  function       |    description               |  output                    |
   |-----------------|------------------------| ---------------------------|
-  | GenerativeModel2D_Bollobas.m   |  Generate networks from Bollobas model |  A: adjacency matrix; D: D(i, 1) indegree of node i; D(i,2): outdegree of node i |
+  | GenerativeModel2D_Bollobas.m   |  Generate networks from Bollobas model |  A: adjacency matrix; D: degree matrix, D(i, 1) indegree of node i; D(i,2): outdegree of node i |
   | PCSDEwithB_gamma_05_for_Bollobas.m   |  Generate sample data from PCSDE model with the same distribution as Bollobas model  |  Figure  |
   | PCSDEwithB_gamma_vary_for_social_network_data.m  | Generate sample data from PCSDE model with the same distribution as social network datasets | Figure |
 
