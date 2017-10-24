@@ -1,8 +1,9 @@
 # Social network datasets (directed) from KONECT
 ## Introduction
-This projects include extracting degree information from TSV file downloaded from KONECT Website http://konect.uni-koblenz.de/; and data visiualization.
+The joint degree (in- and out-degree) distributions of social networks have some unique features which are different from traditional Web hyperlink and citation networks. The differences motivated us to explore an explanation by studying the origin of the distribution. We proposed several two-dimensional mathematical generative models to capture the evolution of the joint degree in social networks. The social network databases were downloaded from KONECT (Koblenz Network Collection, a project to collect large network datasets of all types). We use simulation to compare between the synthetic data from our generative model and the data from real networks. We validate the success of our models by fitting and comparing the asymptotic dependence between synthetic and real data. An abstract was presented in NetSci 2015 and a paper was presented in ACC, 2016 (http://ieeexplore.ieee.org/document/7525372/). Github: https://github.com/ShanLu1984/KONECT-Social-Network-Datasets.
 
-## What's inside:
+## What's inside: 
+This projects include extracting degree information from TSV file downloaded from KONECT Website http://konect.uni-koblenz.de/; and data visiualization.
 1. network_read.m 
 * Usage: get indegree and outdegree of the nodes in the network;
 * Output: degrees.mat  It contains a matrix data with dimension (n, 2), n is the number of nodes in the network; the first column is the indegree of the node; and the second column is the outdegree.
